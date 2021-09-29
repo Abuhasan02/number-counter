@@ -20,9 +20,11 @@ let countNumber = 0;
 function counter(isTrue){
     if(isTrue == true){
         countNumber++;  
+        countValue.style.color="green";
     }
     else if(isTrue==false && countNumber>0){
-        countNumber--;  
+        countNumber--; 
+        countValue.style.color="red"; 
     }
     else{
         countNumber = 0; 
